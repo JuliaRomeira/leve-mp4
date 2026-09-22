@@ -1,8 +1,8 @@
 # Leve — Compactador de vídeos MP4
 
-Aplicação web para compactar vídeos diretamente no navegador, com interface em português e tema lilás.
+Aplicação web para compactar vídeos diretamente no navegador, com interface em português e temas claro e escuro.
 
-**[Abrir o app](https://leve-mp4-julia.juliaromeralage.chatgpt.site)**
+**[Abrir o app](https://juliaromeira.github.io/leve-mp4/)**
 
 ## Funcionalidades
 
@@ -13,6 +13,7 @@ Aplicação web para compactar vídeos diretamente no navegador, com interface e
 - Progresso da compactação e cancelamento.
 - Prévia, comparação de tamanhos e download do MP4 final.
 - Layout responsivo para computador e celular.
+- Tema claro e escuro com alternância deslizante e preferência salva no navegador.
 
 ## Tecnologias
 
@@ -37,7 +38,8 @@ Para hospedar, publique a pasta `dist` em um serviço de arquivos estáticos com
 ```text
 dist/
   index.html       # Estrutura da interface
-  style.css        # Tema lilás e estilos responsivos
+  style.css        # Temas claro/escuro e estilos responsivos
+  favicon.svg      # Ícone da Leve na aba do navegador
   app.js           # Seleção, compactação e download
   mediabunny.js    # Biblioteca de processamento de mídia
 ```
