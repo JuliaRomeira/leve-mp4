@@ -42,11 +42,11 @@
 :root[data-theme="dark"] .author-link:hover{color:#ead7fa}
 
 /* Single light/dark mode capsule with a sliding thumb */
-.theme-toggle{position:relative;width:112px;height:46px;flex:0 0 112px;padding:0;display:block;border:1px solid #d2d6de;border-radius:12px;background:#edf0f4;color:#68707d;transition:background .2s,border-color .2s,color .2s;overflow:hidden}
+.theme-toggle{position:relative;width:112px;height:46px;flex:0 0 112px;padding:0;display:block;border:1px solid #d2d6de;border-radius:12px;background:#edf0f4;color:#68707d;transition:background .35s ease,border-color .35s ease,color .35s ease;overflow:hidden}
 .theme-toggle:hover{background:#e4e8ee;border-color:#b9c0cb}
-.theme-toggle-label{position:absolute;left:46px;top:50%;transform:translateY(-50%);width:55px;font-family:'DM Sans',sans-serif;font-size:9px;font-weight:750;letter-spacing:.55px;line-height:1.08;text-align:center;transition:left .22s ease,color .2s}
-.theme-knob{position:absolute;left:5px;top:5px;width:34px;height:34px;display:grid;place-items:center;border:1px solid #dce0e6;border-radius:50%;background:#fff;box-shadow:0 1px 4px #30213b22;color:#727986;transition:transform .24s cubic-bezier(.2,.8,.2,1),background .2s,border-color .2s}
-.theme-knob svg{grid-area:1/1;width:18px;height:18px;transition:opacity .14s ease}
+.theme-toggle-label{position:absolute;left:46px;top:50%;transform:translateY(-50%);width:55px;font-family:'DM Sans',sans-serif;font-size:9px;font-weight:750;letter-spacing:.55px;line-height:1.08;text-align:center;transition:left .45s cubic-bezier(.4,0,.2,1),color .35s ease}
+.theme-knob{position:absolute;left:5px;top:5px;width:34px;height:34px;display:grid;place-items:center;border:1px solid #dce0e6;border-radius:50%;background:#fff;box-shadow:0 1px 4px #30213b22;color:#727986;transition:transform .45s cubic-bezier(.4,0,.2,1),background .35s ease,border-color .35s ease}
+.theme-knob svg{grid-area:1/1;width:18px;height:18px;transition:opacity .24s ease}
 .theme-moon{opacity:0}
 :root[data-theme="dark"] .theme-toggle{background:#252735;border-color:#454b5e;color:#dfe3eb}
 :root[data-theme="dark"] .theme-toggle:hover{background:#2e3143;border-color:#626981}
@@ -54,3 +54,5 @@
 :root[data-theme="dark"] .theme-knob{transform:translateX(68px);background:#565d73;border-color:#68718a;color:#f0e7fb}
 :root[data-theme="dark"] .theme-sun{opacity:0}
 :root[data-theme="dark"] .theme-moon{opacity:1}
+
+@media(prefers-reduced-motion:reduce){.theme-toggle,.theme-toggle-label,.theme-knob,.theme-knob svg{transition-duration:.01ms}}
