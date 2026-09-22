@@ -3,10 +3,6 @@
 
 .author-link{color:#79509f;text-decoration:underline;text-underline-offset:3px}.author-link:hover{color:#413055}
 
-/* Theme toggle */
-.theme-toggle{width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;border:1px solid #e3dfe6;border-radius:11px;background:#fff;color:#594071;transition:background .2s,border-color .2s,color .2s}
-.theme-toggle:hover{background:#f0e8f6;border-color:#cbb4dd}
-.theme-toggle svg{width:20px;height:20px}
 :root[data-theme="dark"]{color:#eee8f4;background:#17141b;color-scheme:dark}
 :root[data-theme="dark"] header,:root[data-theme="dark"] footer{border-color:#37313d}
 :root[data-theme="dark"] .header-note,:root[data-theme="dark"] .intro p,:root[data-theme="dark"] .small,:root[data-theme="dark"] .bottom-notes,:root[data-theme="dark"] .compatibility{color:#b7adbf}
@@ -44,5 +40,17 @@
 :root[data-theme="dark"] footer,:root[data-theme="dark"] footer .brand{color:#b6aabd}
 :root[data-theme="dark"] .author-link{color:#d0a9ef}
 :root[data-theme="dark"] .author-link:hover{color:#ead7fa}
-:root[data-theme="dark"] .theme-toggle{background:#2c2631;border-color:#49404f;color:#e2c9f5}
-:root[data-theme="dark"] .theme-toggle:hover{background:#3a3042;border-color:#806496}
+
+/* Sliding light/dark theme switch */
+.theme-toggle{width:58px;height:34px;flex:0 0 58px;padding:3px;border:1px solid #d8d0e0;border-radius:20px;background:#ebe6f0;color:#594071;transition:background .2s,border-color .2s;display:block}
+.theme-toggle:hover{background:#e4dbe9;border-color:#bca8cc}
+.theme-track{position:relative;display:flex;align-items:center;justify-content:space-between;height:26px;padding:0 5px}
+.theme-track svg{width:14px;height:14px;z-index:1}
+.sun-icon{color:#b66e1a}
+.moon-icon{color:#78618d}
+.theme-thumb{position:absolute;top:1px;left:0;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 4px #30213b35;transition:transform .22s ease}
+:root[data-theme="dark"] .theme-toggle{background:#51405f;border-color:#705984}
+:root[data-theme="dark"] .theme-toggle:hover{background:#5e4a6e}
+:root[data-theme="dark"] .theme-track svg{color:#e7d1f8}
+:root[data-theme="dark"] .theme-thumb{transform:translateX(24px);background:#eadcf5}
+@media(max-width:650px){.theme-toggle{width:54px;flex-basis:54px;height:32px}.theme-track{height:24px}.theme-track svg{width:13px;height:13px}.theme-thumb{width:22px;height:22px}:root[data-theme="dark"] .theme-thumb{transform:translateX(22px)}}
