@@ -56,3 +56,17 @@
 :root[data-theme="dark"] .theme-moon{opacity:1}
 
 @media(prefers-reduced-motion:reduce){.theme-toggle,.theme-toggle-label,.theme-knob,.theme-knob svg{transition-duration:.01ms}}
+
+@media(max-width:380px){
+  html,body{max-width:100%;overflow-x:clip}
+  header{height:auto;min-height:112px;padding:14px 16px;flex-wrap:wrap;gap:10px 12px}
+  header .brand{font-size:28px;letter-spacing:-1.6px}
+  header .brandmark{width:31px;height:31px;font-size:25px;line-height:29px}
+  .header-note{order:3;width:100%;max-width:none;justify-content:center;font-size:11px}
+  main{margin:0 12px;padding-top:24px}
+  .file-panel,.settings-panel{padding:20px 16px}
+  .dropzone{min-height:290px;padding-inline:12px}
+  .dark-button{gap:16px;padding-inline:16px}
+  .bottom-notes{gap:8px}
+  footer{padding-inline:16px}
+}
