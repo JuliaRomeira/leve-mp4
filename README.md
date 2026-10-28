@@ -4,7 +4,7 @@ Aplicação web para compactar vídeos diretamente no navegador, com interface e
 
 **[Abrir o app](https://juliaromeira.github.io/leve-mp4/)**
 
-![Interface do compactador Leve](https://raw.githubusercontent.com/JuliaRomeira/portfolio-julia/main/assets/galeria-leve.png)
+![Interface do compactador Leve](docs/images/interface.png)
 
 ## Contexto e resultado
 
