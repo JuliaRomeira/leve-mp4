@@ -4,6 +4,16 @@ Aplicação web para compactar vídeos diretamente no navegador, com interface e
 
 **[Abrir o app](https://juliaromeira.github.io/leve-mp4/)**
 
+![Interface do compactador Leve](https://raw.githubusercontent.com/JuliaRomeira/portfolio-julia/main/assets/galeria-leve.png)
+
+## Contexto e resultado
+
+O Leve nasceu de uma necessidade prática: facilitar o envio de vídeos que demonstram erros em chamados de suporte, quando o tamanho dos arquivos dificulta o anexo.
+
+Em um dos testes realizados no projeto, a compactação produziu **redução superior a 71% no tamanho do vídeo**. É um resultado observado em um arquivo específico, **não uma taxa garantida**: o resultado varia conforme o vídeo, codec, resolução e configurações escolhidas.
+
+A demonstração pública está disponível no link acima. O processamento acontece localmente no navegador, sem upload dos vídeos para um servidor.
+
 ## Funcionalidades
 
 - Seleção por arquivo ou arrastar e soltar: MP4, MOV e WebM, até 500 MB.
